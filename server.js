@@ -14,7 +14,7 @@ app.get('/:id', (req, res) => {
     res.sendFile(path.join(initial_path, "about.html"));
 })
 
-let port = processs.env.PORT || 3000
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => {
     console.log('listening on port 3000......');
